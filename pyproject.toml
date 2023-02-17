@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "calendar-draw"
+version = "0.1.0"
+description = ""
+authors = ["Bernd Prager <bernd@prager.ws>"]
+readme = "README.md"
+packages = [{include = "calendar_draw"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^0.21.1"
+pycairo = "^1.23.0"
+openpyxl = "^3.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+pycairo = "^1.23.0"
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
