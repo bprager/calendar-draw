@@ -1,5 +1,9 @@
 # Calendar drawing(s) with Pyhon and Cairo
 
+## Intro
+
+This library takes vacation days from an Excel spreadsheet and draws a calendar for each team including public holidays
+
 ## Requirements
 
 - Cairo libs

@@ -3,6 +3,7 @@ import warnings
 import logging
 import sys
 import os
+from datetime import datetime
 
 import openpyxl
 from dotenv import dotenv_values
@@ -31,9 +32,8 @@ def main():
     teams, countries = cd.build_dict(config)
     log.debug(f"countries: {countries}")
     log.debug(f"teams: {teams}")
-    return
 
-    # calendar_draw.draw()
+    cd.draw(datetime.now(), teams)
     # Define variable to load the dataframe
     with warnings.catch_warnings(record=True):
         warnings.simplefilter("always")
